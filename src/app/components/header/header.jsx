@@ -3,7 +3,7 @@ import NavLinks from './nav-links';
 
 function Header() {
   return (
-    <header>
+    <header className="sticky top-0">
       <div className="flex justify-between items-center py-8 px-8">
         <div className="flex items-center gap-4">
           <Logo className="w-16 h-16 ml-4" />

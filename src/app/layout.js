@@ -1,10 +1,7 @@
 import './globals.css';
-import dynamic from 'next/dynamic';
+
 import Header from './components/header/header';
 import { didact } from './fonts/fonts';
-const Scene = dynamic(() => import('@/app/components/canvas/scene'), {
-  ssr: false,
-});
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,10 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={didact.className}>
+      <body className={`${didact.className}`}>
         <Header />
         {children}
-        <Scene />
       </body>
     </html>
   );

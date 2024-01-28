@@ -9,7 +9,7 @@ export default function Common({ color, controls }) {
       <ambientLight intensity={Math.PI} />
       <directionalLight position={[10, 10, 5]} intensity={5} castShadow />
       <directionalLight position={[-10, -0, -10]} color={color} intensity={3} />
-      <PerspectiveCamera makeDefault fov={40} position={[0, 0, 6]} />
+      <PerspectiveCamera makeDefault fov={40} position={[0, 0, 10]} />
       {controls && (
         <OrbitControls
           minPolarAngle={0}

@@ -1,11 +1,16 @@
 'use client';
 
+import { Canvas } from '@react-three/fiber';
 import dynamic from 'next/dynamic';
-import LandingSection from './components/landing-section/landing-section';
+
 const Common = dynamic(() => import('@/app/components/canvas/common'), {
   ssr: false,
 });
 
+const LandingSection = dynamic(
+  () => import('@/app/components/landing-section/landing-section'),
+  { ssr: false }
+);
 const View = dynamic(
   () => import('@react-three/drei').then((mod) => mod.View),
   {
@@ -40,12 +45,15 @@ const View = dynamic(
 export default function Home() {
   return (
     <main>
-      <section>
+      <section className="">
         <div className="w-full">
-          <View className="h-svh w-full">
+          <Canvas
+            style={{ height: '100svh' }}
+            className="w-full pointer-events-auto"
+          >
             <Common controls />
             <LandingSection />
-          </View>
+          </Canvas>
         </div>
       </section>
     </main>

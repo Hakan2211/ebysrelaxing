@@ -10,30 +10,30 @@ import { useRef, useEffect } from 'react';
 // addEffect((t) => lenis.raf(t));
 
 export default function Scene({ style, ...props }) {
-  const lenisRef = useRef(null);
+  // const lenisRef = useRef(null);
 
-  useEffect(() => {
-    if (!lenisRef.current) {
-      lenisRef.current = new Lenis({
-        lerp: 0.9, // Example value, set the lerp amount you need for the smooth scroll
-        smooth: true,
-        syncTouch: true,
-      });
-    }
+  // useEffect(() => {
+  //   if (!lenisRef.current) {
+  //     lenisRef.current = new Lenis({
+  //       lerp: 0.9, // Example value, set the lerp amount you need for the smooth scroll
+  //       smooth: true,
+  //       syncTouch: true,
+  //     });
+  //   }
 
-    const animate = () => {
-      lenisRef.current.raf();
-      requestAnimationFrame(animate);
-    };
+  //   const animate = () => {
+  //     lenisRef.current.raf();
+  //     requestAnimationFrame(animate);
+  //   };
 
-    requestAnimationFrame(animate);
-    return () => {
-      if (lenisRef.current) {
-        // Stop the animation frame loop when the component unmounts
-        lenisRef.current.destroy();
-      }
-    };
-  }, []);
+  //   requestAnimationFrame(animate);
+  //   return () => {
+  //     if (lenisRef.current) {
+  //       // Stop the animation frame loop when the component unmounts
+  //       lenisRef.current.destroy();
+  //     }
+  //   };
+  // }, []);
 
   return (
     <Canvas
@@ -44,11 +44,11 @@ export default function Scene({ style, ...props }) {
         left: 0,
         width: '100vw',
         height: '100svh',
-        pointerEvents: 'none',
+        // pointerEvents: 'auto',
         ...style,
       }}
-      eventSource={document.body}
-      eventPrefix="client"
+      // eventSource={document.body}
+      // eventPrefix="client"
       {...props}
     >
       <View.Port />
