@@ -7,8 +7,9 @@ import { usePathname } from 'next/navigation';
 function NavLinks() {
   const pathname = usePathname();
   const navLinks = [
+    { name: `Leistungen`, href: `/leistungen` },
     { name: `About`, href: `/about` },
-    { name: `Contact`, href: `/contact` },
+    { name: `Kontakt`, href: `/kontakt` },
   ];
 
   return (
@@ -18,8 +19,8 @@ function NavLinks() {
           key={link.name}
           href={link.href}
           className={clsx(
-            `px-4 py-2 text-2xl font-medium text-gray-500 hover:text-gray-900`,
-            pathname === link.href && `text-gray-900`
+            `px-4 py-2 text-2xl font-medium text-white hover:text-secondary`,
+            pathname === link.href && `text-secondary`
           )}
         >
           {link.name}

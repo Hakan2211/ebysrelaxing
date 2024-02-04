@@ -2,6 +2,10 @@
 
 import { Canvas } from '@react-three/fiber';
 import dynamic from 'next/dynamic';
+import HeroText from './components/landing-section/hero-text';
+import YogaVisuals from './components/landing-section/yoga-visuals';
+import PersonalSection from './components/landing-section/personal-section';
+import Quote from './components/landing-section/quote';
 
 const Common = dynamic(() => import('@/app/components/canvas/common'), {
   ssr: false,
@@ -44,18 +48,28 @@ const View = dynamic(
 
 export default function Home() {
   return (
-    <main>
-      <section className="">
-        <div className="w-full">
-          <Canvas
-            style={{ height: '100svh' }}
-            className="w-full pointer-events-auto"
-          >
+    <main className="col-start-1 col-end-6">
+      <section className="grid md:grid-cols-5 grid-cols-1">
+        <div className=" h-2/3 translate-y-6 p-8 md:col-start-1 md:col-end-4  flex flex-col items-center justify-center">
+          <HeroText />
+        </div>
+        <div className="md:col-start-4 md:col-end-6 w-full px-8 mt-8 md:mt-0 translate-y-24 md:translate-y-0">
+          <Canvas style={{ height: '90svh' }} className=" pointer-events-auto ">
             <Common controls />
             <LandingSection />
           </Canvas>
         </div>
       </section>
+      <section className="w-full h-96 bg-white text-black text-center p-8">
+        <YogaVisuals />
+      </section>
+      <section className="w-full h-1/3 bg-primary">
+        <PersonalSection />
+      </section>
+      <section className="w-full h-96 bg-white text-black text-center p-8">
+        <Quote />
+      </section>
+      <section className="w-full h-1/3 bg-secondary"></section>
     </main>
   );
 }

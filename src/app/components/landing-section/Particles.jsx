@@ -53,11 +53,11 @@ function Particles() {
 
   const originalPosition = getDataTexture(SIZE);
 
-  const texture = new TextureLoader().load('./ebru2_rotated.jpg');
+  const texture = new TextureLoader().load('./ebru_rotated.jpg');
 
   useFrame(({ pointer }) => {
-    followMouse.current.position.x = pointer.x * (viewport.width / 2);
-    followMouse.current.position.y = pointer.y * (viewport.height / 2);
+    // followMouse.current.position.x = pointer.x * (viewport.width / 2);
+    // followMouse.current.position.y = pointer.y * (viewport.height / 2);
     simMat.current.uniforms.uMouse.value.x = pointer.x * (viewport.width / 2);
     simMat.current.uniforms.uMouse.value.y = pointer.y * (viewport.height / 2);
   });
@@ -87,10 +87,10 @@ function Particles() {
         </mesh>,
         scene
       )}
-      <mesh ref={followMouse}>
+      {/* <mesh ref={followMouse}>
         <sphereGeometry args={[0.1, 32, 32]} />
         <meshBasicMaterial color="red" />
-      </mesh>
+      </mesh> */}
       <points>
         <bufferGeometry>
           <bufferAttribute

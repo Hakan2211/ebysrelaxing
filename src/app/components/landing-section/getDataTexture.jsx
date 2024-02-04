@@ -15,8 +15,8 @@ export function getDataTexture(size) {
       let y = Math.sin(phi) * Math.sin(theta);
       let z = Math.cos(phi);
 
-      data[4 * index] = (i / size - 0.5) * 3;
-      data[4 * index + 1] = (j / size - 0.5) * 3;
+      data[4 * index] = (i / size - 0.5) * 5;
+      data[4 * index + 1] = (j / size - 0.4) * 4;
       data[4 * index + 2] = 0;
       data[4 * index + 3] = 0;
     }

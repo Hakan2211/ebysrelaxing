@@ -2,56 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@layer base {
+  :root {
+    --card: 7.95 36.89% 44.12%;
+    --ring: 13 42.61% 58.45%;
+    --input: 13 8.72% 67.98%;
+    --muted: 39.31 15.85% 35.88%;
+    --accent: 39.31 15.85% 35.88%;
+    --border: 39.31 15.85% 35.88%;
+    --popover: 7.95 36.89% 44.12%;
+    --primary: 33.93 100% 76.08%;
+    --secondary: 63.08 23.93% 68.04%;
+    --background: 26.87 69.07% 80.98%;
+    --foreground: 13 0% 98.46%;
+    --destructive: 11 95% 42%;
+    --card-foreground: 13 0% 100%;
+    --muted-foreground: 343 0% 93.85%;
+    --accent-foreground: 43 0% 100%;
+    --popover-foreground: 13 0% 98.46%;
+    --primary-foreground: 13 0% 100%;
+    --secondary-foreground: 343 0% 100%;
+    --destructive-foreground: 0 0% 100%;
+    --radius: 0.5rem;
+  }
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-img,
-picture,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-/*
-  7. Avoid text overflows
-*/
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
