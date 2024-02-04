@@ -17,7 +17,7 @@ function YogaVisuals() {
       <h1 className="text-xl p-6 translate-y-4">
         Eine genußvolle Investition in deinen Körper, Mindset und Seele
       </h1>
-      <div className=" flex justify-center items-center gap-16 p-8">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-16 p-8">
         <div className="flex flex-col items-center ">
           <div className="h-32">
             <Image

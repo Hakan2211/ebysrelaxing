@@ -6,6 +6,10 @@ import HeroText from './components/landing-section/hero-text';
 import YogaVisuals from './components/landing-section/yoga-visuals';
 import PersonalSection from './components/landing-section/personal-section';
 import Quote from './components/landing-section/quote';
+import CardComponent from './components/landing-section/card-section';
+import PriceSection from './components/landing-section/price-section';
+import InvestmentSection from './components/landing-section/investment-section';
+import Footer from './components/footer/footer';
 
 const Common = dynamic(() => import('@/app/components/canvas/common'), {
   ssr: false,
@@ -60,16 +64,42 @@ export default function Home() {
           </Canvas>
         </div>
       </section>
-      <section className="w-full h-96 bg-white text-black text-center p-8">
+      <section className="w-full h-[80rem] md:h-96 bg-white text-black text-center p-8">
         <YogaVisuals />
       </section>
-      <section className="w-full h-1/3 bg-primary">
+
+      <section className="w-full md:h-1/4 lg:h-1/5 bg-primary">
         <PersonalSection />
       </section>
-      <section className="w-full h-96 bg-white text-black text-center p-8">
+      <section className="w-full h-[30rem] md:h-96 bg-white text-black text-center p-8">
         <Quote />
       </section>
-      <section className="w-full h-1/3 bg-secondary"></section>
+      <section className="w-full h-1/3 md:h-1/5 bg-secondary ">
+        <div className="flex flex-col md:flex-row gap-6 p-8 translate-y-16 ">
+          <CardComponent
+            title="Yoga"
+            description="Lorem ispum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            src="/pose1.jpg"
+          />
+          <CardComponent
+            title="Yoga"
+            description="Lorem ispum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            src="/pose2.jpg"
+          />
+          <CardComponent
+            title="Yoga"
+            description="Lorem ispum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            src="/pose3.jpg"
+          />
+        </div>
+      </section>
+      <section className="w-full h-96 bg-white text-gray-500 ">
+        <InvestmentSection />
+      </section>
+      <section className=" h-[70rem] md:h-[30rem] p-8">
+        <PriceSection />
+      </section>
+      <Footer />
     </main>
   );
 }

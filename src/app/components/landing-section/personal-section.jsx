@@ -3,18 +3,20 @@ import Image from 'next/image';
 
 function PersonalSection() {
   return (
-    <div className="flex p-16 gap-8 justify-evenly">
-      <div className="h-[32rem] w-1/3 p-6 flex  flex-col items-center">
-        <h1 className={`${aboreto.className} text-5xl whitespace-nowrap `}>
+    <div className="flex flex-col lg:flex-row p-16 gap-8 items-center lg:justify-evenly">
+      <div className="h-[32rem] w-1/3 p-6 flex flex-col items-center translate-x-20 md:translate-x-0">
+        <h1
+          className={`${aboreto.className} text-3xl md:text-5xl whitespace-nowrap `}
+        >
           Hi! Mein Name ist <span className="text-secondary">Ebru.</span>
         </h1>
-        <div className="p-4 mt-8 text-3xl">
+        <div className="p-4 mt-8 text-2xl md:text-3xl">
           <h2>Ich bin Deine Entspannungstrainerin und Yoga-Coach</h2>
           <p>Ich helfe Dir dabei, dein Selbstbewusstsein zu finden,</p>
           <p>um Dich in deinem wundervollen Körper wohl zu fühlen.</p>
         </div>
       </div>
-      <div className="">
+      <div className="md:w-96">
         <Image
           className="rounded-lg"
           src="/ebru_portrait.jpg"
