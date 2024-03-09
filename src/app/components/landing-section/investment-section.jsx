@@ -4,7 +4,7 @@ function InvestmentSection() {
   return (
     <div className="relative h-[100%]">
       <div>
-        <div className="border border-t-2 border-primary rotate-90 absolute rounded-full -top-4 left-[50%]  w-20 -translate-x-[50%]"></div>
+        <div className="border border-t-2 border-[var(--bg-background-color-1)] rotate-90 absolute rounded-full -top-4 left-[50%]  w-20 -translate-x-[50%]"></div>
         <Image
           className=" absolute -top-10 left-[50%] rounded-full -translate-x-[50%] translate-y-16"
           src="/transitionflower.jpg"

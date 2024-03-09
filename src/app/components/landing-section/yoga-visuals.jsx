@@ -14,7 +14,7 @@ function YogaVisuals() {
           height={30}
         />
       </div>
-      <h1 className="text-xl p-6 translate-y-4">
+      <h1 className="text-xl md:text-2xl p-6 translate-y-1 tracking-wide text-slate-700 font-normal">
         Eine genußvolle Investition in deinen Körper, Mindset und Seele
       </h1>
       <div className="flex flex-col md:flex-row justify-center items-center gap-16 p-8">
@@ -29,7 +29,7 @@ function YogaVisuals() {
             />
           </div>
 
-          <h2 className="p-8">Yoga</h2>
+          {/* <h2 className="p-8">Yoga</h2> */}
         </div>
         <div className="flex flex-col items-center">
           <div className="h-32">
@@ -42,7 +42,7 @@ function YogaVisuals() {
             />
           </div>
 
-          <h2 className="p-8">Yoga</h2>
+          {/* <h2 className="p-8">Yoga</h2> */}
         </div>
         <div className="flex flex-col items-center">
           <div className="h-32">
@@ -55,7 +55,7 @@ function YogaVisuals() {
             />
           </div>
 
-          <h2 className="p-8">Yoga</h2>
+          {/* <h2 className="p-8">Yoga</h2> */}
         </div>
         <div className="flex flex-col items-center">
           <div className="h-32">
@@ -68,7 +68,7 @@ function YogaVisuals() {
             />
           </div>
 
-          <h2 className="p-8">Yoga</h2>
+          {/* <h2 className="p-8">Yoga</h2> */}
         </div>
       </div>
     </div>

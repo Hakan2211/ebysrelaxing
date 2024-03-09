@@ -19,8 +19,8 @@ function NavLinks() {
           key={link.name}
           href={link.href}
           className={clsx(
-            `px-4 py-2 text-2xl font-medium text-white hover:text-secondary`,
-            pathname === link.href && `text-secondary`
+            `px-4 py-2 text-2xl font-medium text-slate-800 hover:text-slate-100`,
+            pathname === link.href && `text-slate-50`
           )}
         >
           {link.name}

@@ -53,28 +53,31 @@ const View = dynamic(
 export default function Home() {
   return (
     <main className="col-start-1 col-end-6">
-      <section className="grid md:grid-cols-5 grid-cols-1">
+      <section className="grid md:grid-cols-5  grid-cols-1">
         <div className=" h-2/3 translate-y-6 p-8 md:col-start-1 md:col-end-4  flex flex-col items-center justify-center">
           <HeroText />
         </div>
         <div className="md:col-start-4 md:col-end-6 w-full px-8 mt-8 md:mt-0 translate-y-24 md:translate-y-0">
-          <Canvas style={{ height: '90svh' }} className=" pointer-events-auto ">
-            <Common controls />
+          <Canvas
+            style={{ height: '90svh' }}
+            className=" pointer-events-auto  "
+          >
+            <Common />
             <LandingSection />
           </Canvas>
         </div>
       </section>
-      <section className="w-full h-[80rem] md:h-96 bg-white text-black text-center p-8">
+      <section className="w-full h-[60rem] md:h-96 bg-slate-50 text-black text-center p-8">
         <YogaVisuals />
       </section>
 
-      <section className="w-full md:h-1/4 lg:h-1/5 bg-primary">
+      <section className="w-full md:h-1/4 lg:h-1/6 bg-[var(--bg-background-color-5)]">
         <PersonalSection />
       </section>
-      <section className="w-full h-[30rem] md:h-96 bg-white text-black text-center p-8">
+      <section className="w-full h-[30rem] md:h-96 bg-slate-50 text-black text-center p-8">
         <Quote />
       </section>
-      <section className="w-full h-1/3 md:h-1/5 bg-secondary ">
+      <section className="w-full h-[27%] md:h-1/5 bg-secondary ">
         <div className="flex flex-col md:flex-row gap-6 p-8 translate-y-16 ">
           <CardComponent
             title="Yoga"
@@ -93,10 +96,10 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="w-full h-96 bg-white text-gray-500 ">
+      <section className="w-full h-96 bg-slate-50 text-gray-500 ">
         <InvestmentSection />
       </section>
-      <section className=" h-[70rem] md:h-[30rem] p-8">
+      <section className="p-8">
         <PriceSection />
       </section>
       <Footer />

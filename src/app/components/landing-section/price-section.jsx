@@ -10,111 +10,129 @@ import {
 
 export default function PriceSection() {
   return (
-    <div className="grid gap-6 md:gap-8 mt-6 grid-cols-1 md:grid-cols-3">
-      <Card className="flex flex-col border-none">
+    <div className="grid gap-6  md:gap-8  grid-cols-1 font-medium  md:grid-cols-3">
+      <Card className="flex flex-col border-none  text-slate-800 bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex items-baseline justify-between">
-            <CardTitle>Basic</CardTitle>
-            <div className="text-4xl font-bold">150$</div>
+            <CardTitle className="text-4xl font-medium  tracking-wide">
+              Business Yoga
+            </CardTitle>
+            <div className="text-4xl tracking-wide">150€</div>
           </div>
 
-          <CardDescription className="translate-y-2">
-            Einzelkunden - einmalgebuehr.
+          <CardDescription className=" text-slate-800 text-xl tracking-wide">
+            Gruppenkurs
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="text-xl tracking-wide">
           <ul className="space-y-2">
             <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              60min Klangschalentherapie
+              <CheckIcon className="mr-2  inline-block h-4 w-4" />
+              <span className=""> 60 Minuten</span>
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              20min Klopfen
+              <span>in Ihren Firmenräumlichkeiten</span>
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              10min Meditation
+              <span>angepasst an Ihre Bedürfnisse</span>
+            </li>
+            <li className="flex items-center">
+              <CheckIcon className="mr-2 inline-block h-4 w-4" />
+              <span>Terminzeiten nach Absprache</span>
             </li>
           </ul>
         </CardContent>
         <CardFooter>
-          <Button className="w-full" variant="outline">
-            Choose Plan
+          <Button
+            className="bg-[var(--bg-background-color-6)]"
+            variant="outline"
+          >
+            <span className="text-xl">Termin buchen</span>
           </Button>
         </CardFooter>
       </Card>
-      <Card className="flex flex-col border-none">
+      <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex items-baseline justify-between">
-            <CardTitle>Pro</CardTitle>
-            <div className="text-4xl font-bold">499$</div>
+            <CardTitle className="text-4xl font-medium tracking-wide">
+              Individuelle Betreuung
+            </CardTitle>
+            {/* <div className="text-4xl font-bold">499$</div> */}
           </div>
-          <CardDescription>Einzelkunden - 5er Karte</CardDescription>
+          <CardDescription className=" text-slate-800 text-xl tracking-wide">
+            Preis auf Anfrage
+          </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="text-xl tracking-wide">
           <ul className="space-y-2">
+            <li className="flex items-center">
+              <CheckIcon className="mr-2 inline-block h-4 w-4" />
+              Yoga
+            </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
               Meditation
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Klangschale
+              Klangbad
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Klopfen
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Affirmation
+              EFT (Emotional Freedom Technique)
             </li>
           </ul>
         </CardContent>
         <CardFooter>
-          <Button className="w-full" variant="outline">
-            Choose Plan
+          <Button
+            className="bg-[var(--bg-background-color-6)]"
+            variant="outline"
+          >
+            <span className="text-xl">Termin buchen</span>
           </Button>
         </CardFooter>
       </Card>
-      <Card className="flex flex-col border-none">
+      <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex md:flex-col lg:flex-row items-baseline justify-between">
-            <CardTitle>Unternehmen</CardTitle>
-            <div className="text-2xl font-bold">per Absprache</div>
+            <CardTitle className="text-4xl font-medium tracking-wide">
+              Astrologie
+            </CardTitle>
+            <div className="text-4xl">199€</div>
           </div>
-          <CardDescription>
-            For large businesses with comprehensive needs.
+          <CardDescription className="text-slate-800 text-xl tracking-wide">
+            Geburtshoroskop
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="text-xl tracking-wide">
           <ul className="space-y-2">
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Unlimited Projects
+              90 Minuten
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Unlimited Storage
+              1:1 Onlineberatung
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              24/7 Support
+              Persönliche Analyse
             </li>
+
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Free Updates
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Custom Options
+              inklusive E-Book zum Nachlesen
             </li>
           </ul>
         </CardContent>
         <CardFooter>
-          <Button className="w-full" variant="outline">
-            Choose Plan
+          <Button
+            className="bg-[var(--bg-background-color-6)]"
+            variant="outline"
+          >
+            <span className="text-xl">Termin buchen</span>
           </Button>
         </CardFooter>
       </Card>

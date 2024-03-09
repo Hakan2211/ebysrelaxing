@@ -4,7 +4,7 @@ export default function CardComponent({ title, description, src }) {
   return (
     <div className="">
       <Card className="border-none">
-        <CardContent className="flex flex-col items-center bg-gray-300 gap-4 p-4">
+        <CardContent className="flex flex-col items-center bg-[var(--bg-background-color-4)] rounded-lg gap-4 p-4">
           <img
             alt="Category 1"
             className="w-full h-60 md:h-96 object-cover rounded-lg"
@@ -16,8 +16,12 @@ export default function CardComponent({ title, description, src }) {
             }}
             width="200"
           />
-          <h3 className="text-xl font-semibold">{title}</h3>
-          <p className="text-center text-white ">{description}</p>
+          <h3 className="text-xl md:text-3xl tracking-wide text-slate-800 font-medium">
+            {title}
+          </h3>
+          <p className="text-center md:text-lg tracking-wide text-slate-700 ">
+            {description}
+          </p>
         </CardContent>
       </Card>
     </div>
