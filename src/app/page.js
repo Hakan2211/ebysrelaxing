@@ -68,7 +68,7 @@ export default function Home() {
           </Canvas> */}
           <div
             className="flex 
-          justify-center  h-[75%] md:-translate-y-32  translate-y-8 w-full self-end "
+          justify-center  h-[75%] md:-translate-y-32 translate-y-16  w-full self-end "
           >
             <Image
               src="/background_ebru.jpg"
