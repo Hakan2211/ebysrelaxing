@@ -75,7 +75,7 @@ export default function Home() {
               width={600}
               height={400}
               alt="background"
-              className=" w-[90%] p-2 rounded-full h-[80%] md:h-[90%] md:w-[100%]"
+              className=" w-[90%] p-2 rounded-full h-[80%] md:h-[80%] md:w-[90%]"
               // aspectRatio={4 / 5}
             />
           </div>
