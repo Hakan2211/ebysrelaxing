@@ -43,7 +43,7 @@ export default function Scene({ style, ...props }) {
         top: 0,
         left: 0,
         width: '100vw',
-        height: '100svh',
+        height: '100%',
         // pointerEvents: 'auto',
         ...style,
       }}

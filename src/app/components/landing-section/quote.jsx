@@ -13,12 +13,12 @@ function Quote() {
           height={30}
         />
       </div>
-      <blockquote className="p-4 h-72 mt-6">
-        <p className="text-5xl mt-16 text-gray-500">
+      <blockquote className="p-4 h-72 mt-2">
+        <p className="md:text-5xl text-2xl mt-16 text-gray-500">
           &#8220;Mut steht am Anfang des Handelns, Glück am Ende.&#8221;
         </p>
 
-        <cite className="text-xl text-gray-400">
+        <cite className="text-xl md:text-2xl  text-gray-400">
           Demokrit, griechischer Philosopoph (460v.Chr. - 371 v.Chr.)
         </cite>
       </blockquote>

@@ -34,6 +34,11 @@
     --bg-background-color-4: #ede8d4;
     --bg-background-color-7: #6a604d;
   }
+
+  html,
+  body {
+    height: 100%;
+  }
 }
 @layer base {
   * {

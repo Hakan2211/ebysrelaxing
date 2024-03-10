@@ -53,7 +53,7 @@ function Particles() {
 
   const originalPosition = getDataTexture(SIZE);
 
-  const texture = new TextureLoader().load('./ebru_rotated.jpg');
+  const texture = new TextureLoader().load('./ebru2.jpg');
 
   useFrame(({ pointer }) => {
     // followMouse.current.position.x = pointer.x * (viewport.width / 2);
@@ -77,7 +77,7 @@ function Particles() {
   return (
     <>
       {createPortal(
-        <mesh>
+        <mesh positionY={4}>
           <planeGeometry args={[2, 2]} />
           <simulationMaterial
             ref={simMat}

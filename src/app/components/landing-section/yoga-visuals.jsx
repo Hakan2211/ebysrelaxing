@@ -19,45 +19,45 @@ function YogaVisuals() {
       </h1>
       <div className="flex flex-col md:flex-row justify-center items-center gap-16 p-8">
         <div className="flex flex-col items-center ">
-          <div className="h-32">
+          <div className="h-72">
             <Image
               className="rounded-full object-cover h-[100%]"
-              src="/pose1.jpg"
+              src="/yogamatte.jpg"
               alt="Yoga-1"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
             />
           </div>
 
           {/* <h2 className="p-8">Yoga</h2> */}
         </div>
         <div className="flex flex-col items-center">
-          <div className="h-32">
+          <div className="h-72">
             <Image
               className="rounded-full object-cover  h-[100%]"
-              src="/pose2.jpg"
+              src="/ebru_visuals2.jpg"
               alt="Yoga-1"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
             />
           </div>
 
           {/* <h2 className="p-8">Yoga</h2> */}
         </div>
         <div className="flex flex-col items-center">
-          <div className="h-32">
+          <div className="h-72">
             <Image
               className="rounded-full object-cover  h-[100%]"
-              src="/pose3.jpg"
+              src="/ebru_visuals3.jpg"
               alt="Yoga-1"
-              width={200}
-              height={200}
+              width={300}
+              height={300}
             />
           </div>
 
           {/* <h2 className="p-8">Yoga</h2> */}
         </div>
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center">
           <div className="h-32">
             <Image
               className="rounded-full object-cover  h-[100%]"
@@ -68,8 +68,8 @@ function YogaVisuals() {
             />
           </div>
 
-          {/* <h2 className="p-8">Yoga</h2> */}
-        </div>
+          
+        </div> */}
       </div>
     </div>
   );

@@ -11,12 +11,12 @@ function HeroText() {
       </h1>
 
       <p
-        className={`${aboreto.className} md:text-3xl text-xl md:pb-8 leading-relaxed tracking-wider text-center`}
+        className={`${aboreto.className} md:text-3xl text-2xl md:pb-8 leading-relaxed tracking-wider text-center`}
       >
         Entspannung durch Klangschalentherapie
       </p>
       <div
-        className={`${maitree.className} text-2xl tracking-wide text-slate-700  leading-relaxed h-80`}
+        className={`${maitree.className} md:text-2xl text-lg tracking-wider text-slate-700 text-balance  mt-2 text-center leading-relaxed h-80`}
       >
         <p>Willkommen zu einer einzigartigen Erfahrung der Ruhe.</p>
 

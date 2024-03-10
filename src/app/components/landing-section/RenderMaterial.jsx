@@ -36,7 +36,7 @@ const RenderMaterial = shaderMaterial(
       rotatedCoords += 0.5;
         vec3 color = texture2D(uTexture, rotatedCoords).rgb;
 
-        gl_FragColor.rgba = vec4(color,0.6);
+        gl_FragColor.rgba = vec4(color,0.9);
     }
     `
 );
