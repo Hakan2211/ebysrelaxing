@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <div className="grid grid-rows-[180px_1fr_200px] md:grid-rows-[120px_1fr_200px] grid-cols-5">
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </body>
     </html>

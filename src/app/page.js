@@ -81,18 +81,18 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full h-[75rem] md:h-[30rem] bg-slate-50 text-black text-center p-8">
+      <section className=" bg-slate-50 text-black text-center p-8">
         <YogaVisuals />
       </section>
 
-      <section className="w-full md:h-1/4 lg:h-1/6 bg-[var(--bg-background-color-5)]">
+      <section className="bg-[var(--bg-background-color-5)]">
         <PersonalSection />
       </section>
-      <section className="w-full h-[20rem] md:h-96 bg-slate-50 text-black text-center p-8">
+      <section className=" bg-slate-50 text-black text-center p-8">
         <Quote />
       </section>
-      <section className="w-full h-[27%] md:h-1/5 bg-secondary ">
-        <div className="flex flex-col md:flex-row gap-6 p-8 translate-y-16 ">
+      <section className="bg-secondary ">
+        <div className="flex flex-col md:flex-row gap-6 p-8 ">
           <CardComponent
             title="Entspannung"
             description="Lorem ispum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -110,13 +110,13 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="w-full h-96 bg-slate-50 text-gray-500 ">
+      <section className=" bg-slate-50 text-gray-500 ">
         <InvestmentSection />
       </section>
       <section className="p-8">
         <PriceSection />
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

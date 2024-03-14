@@ -17,7 +17,7 @@ function InvestmentSection() {
         <h1 className="text-4xl text-center pt-10 md:pt-0 ">
           Investiere in deine Gesundheit
         </h1>
-        <div className="md:h-[80%] h-[50%] ">
+        <div className="md:h-[80%] h-[50%] p-6 ">
           <Image
             className="rounded-lg object-cover h-[100%] w-[100%]"
             src="/flow.png"
