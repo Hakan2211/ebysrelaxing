@@ -15,11 +15,11 @@ export default function PriceSection() {
       <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex items-baseline justify-between">
-            <CardTitle className="text-4xl font-medium tracking-wide">
+            <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Gruppenevent
             </CardTitle>
             {/* <div className="text-4xl font-bold">499$</div> */}
-            <div className="text-4xl tracking-wide">49€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">49€</div>
           </div>
           <CardDescription className=" text-slate-800 text-xl tracking-wide">
             Onlineworkshop
@@ -57,10 +57,10 @@ export default function PriceSection() {
       <Card className="flex flex-col border-none  text-slate-800 bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex items-baseline justify-between">
-            <CardTitle className="text-4xl font-medium  tracking-wide">
+            <CardTitle className="text-3xl md:text-4xl font-medium  tracking-wide">
               Business Yoga
             </CardTitle>
-            <div className="text-4xl tracking-wide">150€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">150€</div>
           </div>
 
           <CardDescription className=" text-slate-800 text-xl tracking-wide">
@@ -100,10 +100,10 @@ export default function PriceSection() {
       <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex md:flex-col lg:flex-row items-baseline justify-between">
-            <CardTitle className="text-4xl font-medium tracking-wide">
+            <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Astrologie
             </CardTitle>
-            <div className="text-4xl">199€</div>
+            <div className="text-3xl md:text-4xl">199€</div>
           </div>
           <CardDescription className="text-slate-800 text-xl tracking-wide">
             Geburtshoroskop
@@ -126,7 +126,7 @@ export default function PriceSection() {
 
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              inklusive E-Book zum Nachlesen
+              ausführliches E-Book zum Nachlesen
             </li>
           </ul>
         </CardContent>
