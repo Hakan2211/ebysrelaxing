@@ -16,13 +16,13 @@ export default function ContactFormEmail({ message, senderEmail }) {
   return (
     <Html>
       <Head />
-      <Preview>Neue Nachriucht von deiner Seite "Ebysrelaxing"</Preview>
+      <Preview>Neue Nachriucht von deiner Seite Ebysrelaxing</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight">
-                Du hast folgende Nachricht von deiner Seite "Ebysrelaxing"
+                Du hast folgende Nachricht von deiner Seite Ebysrelaxing
                 erhalten:
               </Heading>
               <Text>{message}</Text>
