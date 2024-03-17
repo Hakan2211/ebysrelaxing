@@ -27,7 +27,7 @@ function Kontakt() {
 
       <div>
         <form
-          className="flex text-xl flex-col gap-4 mt-10 p-2 mb-10"
+          className="flex text-xl flex-col gap-4 mt-10 mb-10"
           action={async (formData) => {
             const { data, error } = await sendEmail(formData);
 
