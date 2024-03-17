@@ -41,7 +41,7 @@ function Kontakt() {
           }}
         >
           <input
-            className="p-4 rounded-xl  outline-[var(--bg-background-color-6)]"
+            className="p-4 rounded-xl outline-[var(--bg-background-color-6)]"
             name="senderEmail"
             type="email"
             required
