@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${didact.className} bg-[var(--bg-background-color-4)] text-white`}
       >
-        <div className="grid grid-rows-[180px_1fr_120px] md:grid-rows-[120px_1fr_100px] h-[100svh] grid-cols-5">
+        <div className="grid grid-rows-[180px_1fr_100px] md:grid-rows-[120px_1fr_100px] h-[100svh] grid-cols-5">
           <Header />
           {children}
           <Footer />
