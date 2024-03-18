@@ -4,7 +4,7 @@ import ArrowRight from './arrow-right';
 
 function About() {
   return (
-    <div className="col-start-2 col-end-5 text-slate-800 p-4">
+    <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 text-slate-800 p-4">
       <h2 className="text-2xl tracking-wide leading-relaxed">
         Hi. Ich bin{' '}
         <span className="text-[var(--bg-background-color-6)]">Ebru!</span>
@@ -15,7 +15,7 @@ function About() {
         Yoga und Meditation für Anfänger und Fortgeschrittene. Das Ziel meiner
         Arbeit ist es, Menschen zu helfen, sich zu entspannen und zu erholen.
       </p>
-      <div className="flex flex-col md:flex-row gap-2 md:mt-20  p-8 md:translate-y-4">
+      <div className="flex flex-col md:flex-row gap-2 md:mt-20 py-8 md:translate-y-4">
         <div className="flex justify-center rounded-lg  md:-rotate-3">
           <Image
             className="rounded-lg"
