@@ -104,7 +104,7 @@ function About() {
         Yoga und Meditation für Anfänger und Fortgeschrittene. Das Ziel meiner
         Arbeit ist es, Menschen zu helfen, sich zu entspannen und zu erholen.
       </p>
-      <div className="flex flex-col gap-4 md:flex-row mb-5 ">
+      <div className="mt-5 flex flex-col gap-4 md:flex-row mb-10 ">
         <Button className=" p-6 bg-[var(--bg-background-color-6)] duration-500 ease-in-out  transition-colors group hover:bg-[var(--bg-background-color-7)]">
           <Link href="/kontakt">
             <span className="text-xl font-bold  tracking-wide text-slate-800 duration-500 ease-in-out transition-colors group-hover:text-slate-200">
