@@ -10,9 +10,9 @@ function Kontakt() {
   const [message, setMessage] = useState('');
 
   return (
-    <div className="col-start-2 col-end-5 text-slate-800">
+    <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 p-4 text-slate-800">
       <Toaster position="top-right" />
-      <div className="flex flex-col gap-2 mt-10 text-lg">
+      <div className="flex flex-col gap-2 mt-10 text-lg w-fit">
         <p>
           Kontaktiere mich direkt an dieser E-Mail-Adresse:
           <a

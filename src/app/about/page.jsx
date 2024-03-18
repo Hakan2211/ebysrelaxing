@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import ArrowRight from './arrow-right';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 function About() {
   return (
@@ -91,17 +93,26 @@ function About() {
         Yoga und Meditation für Anfänger und Fortgeschrittene. Das Ziel meiner
         Arbeit ist es, Menschen zu helfen, sich zu entspannen und zu erholen.
       </p>
-      <div className="rounded-lg flex justify-center mt-5 mb-5">
+      <div className="rounded-lg flex justify-center mt-5 mb-10">
         <video className="rounded-lg" width={500} height={500} controls>
           <source src="/ebru_video.mp4" type="video/mp4" />
         </video>
       </div>
-      <p className="md:mb-10 text-xl tracking-wider leading-relaxed md:mt-5">
+      <p className="md:mb-5 text-xl tracking-wider leading-relaxed md:mt-5">
         Ich bin Meditations- und Yoga-Lehrerin und ich liebe es, Menschen zu
         helfen, sich zu entspannen und zu erholen. Ich bin spezialisiert auf
         Yoga und Meditation für Anfänger und Fortgeschrittene. Das Ziel meiner
         Arbeit ist es, Menschen zu helfen, sich zu entspannen und zu erholen.
       </p>
+      <div className="flex flex-col gap-4 md:flex-row mb-5 ">
+        <Button className=" p-6 bg-[var(--bg-background-color-6)] duration-500 ease-in-out  transition-colors group hover:bg-[var(--bg-background-color-7)]">
+          <Link href="/kontakt">
+            <span className="text-xl font-bold  tracking-wide text-slate-800 duration-500 ease-in-out transition-colors group-hover:text-slate-200">
+              Hier bin ich erreichbar
+            </span>
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }
