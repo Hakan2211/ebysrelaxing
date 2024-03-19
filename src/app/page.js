@@ -7,7 +7,7 @@ import YogaVisuals from './components/landing-section/yoga-visuals';
 import PersonalSection from './components/landing-section/personal-section';
 import Quote from './components/landing-section/quote';
 import CardComponent from './components/landing-section/card-section';
-import PriceSection from './components/landing-section/price-section';
+import PriceSection from './components/landing-section/PriceSection';
 import InvestmentSection from './components/landing-section/investment-section';
 import Footer from './components/footer/footer';
 import Image from 'next/image';
