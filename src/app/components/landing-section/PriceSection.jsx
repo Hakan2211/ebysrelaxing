@@ -12,15 +12,15 @@ import { CheckIcon } from './price-section';
 
 export default function PriceSection() {
   return (
-    <div className="grid gap-6  md:gap-8  grid-cols-1 font-medium  md:grid-cols-3">
+    <div className="grid gap-6 md:gap-8  grid-cols-1 font-medium  xl:grid-cols-3">
       <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex items-baseline justify-between">
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
-              Gruppenevent
+              Gruppenspecial
             </CardTitle>
             {/* <div className="text-4xl font-bold">499$</div> */}
-            <div className="text-3xl md:text-4xl tracking-wide">49€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">35€</div>
           </div>
           <CardDescription className=" text-slate-800 text-xl tracking-wide">
             Onlineworkshop
@@ -30,23 +30,21 @@ export default function PriceSection() {
           <ul className="space-y-2">
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Yoga
+              60 Minuten
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Meditation
+              Yoga & PMR
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Klangbad
+              EFT & Atem
             </li>
             <li className="flex items-center ">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              <span className="hidden md:block">
-                EFT (Emotional Freedom Technique)
-              </span>
+              <span className="hidden md:block">Meditation & Klang</span>
 
-              <span className="block md:hidden">EFT</span>
+              <span className="block md:hidden">Meditation & Klang</span>
             </li>
           </ul>
         </CardContent>
@@ -63,32 +61,32 @@ export default function PriceSection() {
         <CardHeader>
           <div className="flex items-baseline justify-between">
             <CardTitle className="text-3xl md:text-4xl font-medium  tracking-wide">
-              Business Yoga
+              Wellbeing Angebot
             </CardTitle>
-            <div className="text-3xl md:text-4xl tracking-wide">150€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">175€</div>
           </div>
 
           <CardDescription className=" text-slate-800 text-xl tracking-wide">
-            Gruppenkurs
+            Präsenzkurs
           </CardDescription>
         </CardHeader>
         <CardContent className="text-xl tracking-wide">
           <ul className="space-y-2">
             <li className="flex items-center">
               <CheckIcon className="mr-2  inline-block h-4 w-4" />
-              <span className=""> 60 Minuten</span>
+              <span className="">60 Minuten</span>
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              <span>in Ihren Firmenräumlichkeiten</span>
+              <span>Raum Frankfurt</span>
             </li>
             <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              <span>angepasst an Ihre Bedürfnisse</span>
+              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
+              <span>In Ihren Firmenräumlichkeiten</span>
             </li>
             <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              <span>Terminzeiten nach Absprache</span>
+              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
+              <span>Angepasst an Ihre Bedürfnisse </span>
             </li>
           </ul>
         </CardContent>
@@ -108,33 +106,35 @@ export default function PriceSection() {
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Astrologie
             </CardTitle>
-            <div className="text-3xl md:text-4xl">199€</div>
+            <div className="text-3xl md:text-4xl">215€</div>
           </div>
           <CardDescription className="text-slate-800 text-xl tracking-wide">
-            Geburtshoroskop
+            Onlineberatung
           </CardDescription>
         </CardHeader>
         <CardContent className="text-xl tracking-wide">
           <ul className="space-y-2">
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              90 Minuten
+              75 Minuten
             </li>
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              1:1 Onlineberatung
+              Geburtshoroskop
             </li>
             <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Persönliche Analyse
+              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
+              Fünf-Schichten-Modell Deutung
             </li>
 
             <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
+              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
               <span className="hidden md:block">
-                ausführliches E-Book zum Nachlesen
+                Psychol. Ansätze nach C. G. Jung
               </span>
-              <span className="block md:hidden">E-Book</span>
+              <span className="block md:hidden">
+                Psychol. Ansätze nach C. G. Jung
+              </span>
             </li>
           </ul>
         </CardContent>

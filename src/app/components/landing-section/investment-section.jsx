@@ -14,9 +14,13 @@ function InvestmentSection() {
         />
       </div>
       <div className=" flex flex-col md:flex-row h-[100%] items-center justify-center md:justify-evenly gap-8">
-        <h1 className="text-4xl text-center pt-10 md:pt-0 ">
-          Investiere in deine Gesundheit
-        </h1>
+        <div className="flex flex-col md:max-w-[40%] mt-5 p-2 text-balance">
+          <h2 className="text-4xl text-center pt-10 md:pt-0 ">
+            Du bist herzlich eingeladen, dich auf die Reise der Selbstentfaltung
+            zu begeben und deine innere Größe aufzuspüren.
+          </h2>
+        </div>
+
         <div className="md:h-[80%] h-[50%] p-6 ">
           <Image
             className="rounded-lg object-cover h-[100%] w-[100%]"

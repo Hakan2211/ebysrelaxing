@@ -1,0 +1,30 @@
+@media (max-width: 1030px) {
+  .customHeight {
+    height: 50svh;
+  }
+}
+@media (max-width: 820px) {
+  .customHeight {
+    height: 80svh;
+  }
+}
+@media (max-width: 770px) {
+  .customHeight {
+    height: 90svh;
+  }
+}
+@media (max-width: 430px) {
+  .customHeight {
+    height: 90svh;
+  }
+}
+@media (max-width: 415px) {
+  .customHeight {
+    height: 100svh;
+  }
+}
+@media (max-width: 380px) {
+  .customHeight {
+    height: 140svh;
+  }
+}

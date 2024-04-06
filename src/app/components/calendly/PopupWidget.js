@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 
-const CalendlyEmbed = ({ url }) => {
+const CalendlyEmbed = ({ url, children }) => {
   useEffect(() => {
     // Dynamically load the Calendly script
     const script = document.createElement('script');
@@ -43,7 +43,7 @@ const CalendlyEmbed = ({ url }) => {
       onClick={handleCalendlyPopup}
       style={{ cursor: 'pointer' }}
     >
-      Termin buchen
+      {children || 'Termin buchen'}
     </div>
   );
 };

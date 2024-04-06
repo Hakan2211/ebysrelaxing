@@ -13,16 +13,18 @@ function Kontakt() {
     <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 p-4 text-slate-800">
       <Toaster position="top-right" />
       <div className="flex flex-col gap-2 mt-10 text-lg w-fit">
-        <p>
-          Kontaktiere mich direkt an dieser E-Mail-Adresse:
+        <p>Hier kannst du mir eine Nachricht hinterlassen!</p>
+        <div className="flex">
+          <p>Kontaktiere mich auf meiner E-Mail-Adresse:</p>
           <a
             className="underline underline-offset-4 ml-3 hover:text-[var(--bg-background-color-6)] "
             href="mailto:ebysrelaxing@gmail.com"
           >
             ebysrelaxing@gmail.com
           </a>
-        </p>
-        <p>oder fülle die Zeilen unten aus und sende die Nachricht.</p>
+        </div>
+
+        <p>oder fülle die folgenden Felder aus und sende deine Nachricht ab.</p>
       </div>
 
       <div>
@@ -64,7 +66,7 @@ function Kontakt() {
             variant="outline"
             type="submit"
           >
-            Sende die Nachricht
+            Senden
           </Button>
         </form>
       </div>

@@ -19,9 +19,13 @@ export default function CardComponent({ title, description, src }) {
           <h3 className="text-xl md:text-3xl tracking-wide text-slate-800 font-medium">
             {title}
           </h3>
-          <p className="text-center md:text-lg tracking-wide text-slate-700 ">
-            {description}
-          </p>
+          <div className="text-center md:text-lg tracking-wide text-slate-700 ">
+            <ul>
+              {description.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </CardContent>
       </Card>
     </div>

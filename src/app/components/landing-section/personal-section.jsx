@@ -11,13 +11,23 @@ function PersonalSection() {
         <h1
           className={`${aboreto.className} text-2xl md:text-4xl whitespace-nowrap tracking-wider leading-relaxed text-slate-800 `}
         >
-          Hi! Mein Name ist{' '}
-          <span className="text-yellow-800 font-bold">Ebru.</span>
+          Hi! Ich bin <span className="text-yellow-800 font-bold">Ebru.</span>
         </h1>
-        <div className="p-2 mt-4 text-2xl md:text-3xl tracking-wider   text-slate-700">
-          <h2>Ich bin Deine Entspannungstrainerin und Yoga-Coach</h2>
-          <p>Ich helfe Dir dabei, dein Selbstbewusstsein zu finden,</p>
-          <p>um Dich in deinem wundervollen Körper wohl zu fühlen.</p>
+        <div className="p-2 mt-4 text-2xl md:text-3xl lg:max-w-[70%]  tracking-wider text-slate-700">
+          <p>
+            von Herzen freue ich mich, dass du den Weg zu mir gefunden hast. Als
+            deine Ansprechpartnerin für Entspannungstechniken, Yoga &
+            Astrologische Psychologie möchte ich dich mit wirkungsvollen
+            Methoden wie, Mediation, Emotional Freedom Technique (EFT), Yoga und
+            Progressiver Muskelentspannung (PMR) in Begleitung mit Atemübungen
+            und Klängen bereichern, um deine Selbstheilungskräfte zu aktivieren.
+          </p>
+          <p>
+            Die Astrologische Psychologie bietet dir die Möglichkeit deinen
+            einzigartigen Fußabdruck zu entdecken und deiner Selbst bewusst zu
+            werden.
+          </p>
+
           <div className="flex flex-col gap-4 md:flex-row ">
             <Button className="mt-8 p-6 bg-[var(--bg-background-color-6)] duration-500 ease-in-out  transition-colors group hover:bg-[var(--bg-background-color-7)]">
               <Link href="/about">
@@ -41,7 +51,7 @@ function PersonalSection() {
           </div>
         </div>
       </div>
-      <div className="md:w-96 p-4 md:p-0 ">
+      <div className="md:w-96 p-4 md:p-0 shrink-0">
         <div className="rounded-full">
           <Image
             className="rounded-full"

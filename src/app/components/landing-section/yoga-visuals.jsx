@@ -14,9 +14,13 @@ function YogaVisuals() {
           height={30}
         />
       </div>
-      <h1 className="text-xl md:text-2xl p-6 translate-y-1 tracking-wide text-slate-700 font-normal">
-        Eine genußvolle Investition in deinen Körper, Mindset und Seele
-      </h1>
+      <div className="w-full flex items-center justify-center">
+        <h2 className="text-xl md:text-2xl md:max-w-[40%] text-center p-2 mt-2 translate-y-1 tracking-wide text-slate-700 font-normal">
+          Daher erhälst du von mir eine einzigartige Mischung an Werkzeugen und
+          das Know-how meiner eigenen Erfahrungen
+        </h2>
+      </div>
+
       <div className="flex flex-col md:flex-row justify-center items-center gap-16 p-8">
         <div className="flex flex-col items-center ">
           <div className="h-72">
@@ -35,7 +39,7 @@ function YogaVisuals() {
           <div className="h-72">
             <Image
               className="rounded-full object-cover  h-[100%]"
-              src="/ebru_visuals2.jpg"
+              src="/ebru3.jpg"
               alt="Yoga-1"
               width={300}
               height={300}
