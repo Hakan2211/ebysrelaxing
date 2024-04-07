@@ -18,9 +18,10 @@ function PersonalSection() {
             von Herzen freue ich mich, dass du den Weg zu mir gefunden hast. Als
             deine Ansprechpartnerin für Entspannungstechniken, Yoga &
             Astrologische Psychologie möchte ich dich mit wirkungsvollen
-            Methoden wie, Mediation, Emotional Freedom Technique (EFT), Yoga und
-            Progressiver Muskelentspannung (PMR) in Begleitung mit Atemübungen
-            und Klängen bereichern, um deine Selbstheilungskräfte zu aktivieren.
+            Methoden wie, Meditation, Emotional Freedom Technique (EFT), Yoga
+            und Progressiver Muskelentspannung (PMR) in Begleitung mit
+            Atemübungen und Klängen bereichern, um deine Selbstheilungskräfte zu
+            aktivieren.
           </p>
           <p>
             Die Astrologische Psychologie bietet dir die Möglichkeit deinen
