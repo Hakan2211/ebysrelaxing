@@ -17,7 +17,7 @@ export default function PriceSection() {
         <CardHeader>
           <div className="flex items-baseline justify-between">
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
-              Gruppenspecial
+              Gruppen-Special
             </CardTitle>
             {/* <div className="text-4xl font-bold">499$</div> */}
             <div className="text-3xl md:text-4xl tracking-wide">35€</div>

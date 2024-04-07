@@ -10,7 +10,7 @@ function Leistungen() {
   return (
     <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 text-slate-800 p-4">
       <h2 className="text-2xl tracking-wide leading-relaxed underline underline-offset-4">
-        Gruppenspecial:
+        Gruppen-Special:
       </h2>
       <p className="mt-5 text-xl tracking-wider leading-relaxed">
         Im Laufe der Jahre habe ich meinen eigenen Stil entwickelt, der meine
@@ -94,7 +94,7 @@ function Leistungen() {
           <ArrowRight /> <span>Reduzierung von Stress</span>
         </li>
         <li className="flex items-center gap-5 mt-2">
-          <ArrowRight />{' '}
+          <ArrowRight />
           <span>Förderung einer angenehmen Arbeitsatmosphäre</span>
         </li>
         <li className="flex items-center gap-5 mt-2">
