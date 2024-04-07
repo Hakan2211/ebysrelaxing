@@ -69,43 +69,47 @@ function About() {
       </h2>
       <ul className="flex flex-col text-lg">
         <li className="flex items-center gap-4  mt-5">
-          <ArrowRight /> <p>Sonnenzeichen - Jungfrau</p>
+          <ArrowRight className="h-6 w-6" /> <p>Sonnenzeichen - Jungfrau</p>
         </li>
         <li className="flex gap-4 mt-2 items-center">
-          <ArrowRight /> <p>Aszendent - Skorpion</p>
+          <ArrowRight className="h-6 w-6" /> <p>Aszendent - Skorpion</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight /> <p>Mondzeichen - Jungfrau</p>
+          <ArrowRight className="h-6 w-6" /> <p>Mondzeichen - Jungfrau</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight /> <p>Numerologie - Lebenszahl 12</p>
+          <ArrowRight className="h-6 w-6" /> <p>Numerologie - Lebenszahl 12</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight />{' '}
+          <ArrowRight className="h-6 w-6 shrink-0" />
           <p>
             Human Design - Generatorin Profil 3/5 Lebensthema:
             Gemeinschaftliches Wohlergehen vorantreiben
           </p>
         </li>
       </ul>
-      <h2 className="md:mb-5 text-xl tracking-wider underline underline-offset-4 leading-relaxed md:mt-5">
+      <h2 className="md:mb-5 text-xl tracking-wider underline underline-offset-4 leading-relaxed mt-10">
         Meine Ausbildungen
       </h2>
       <ul className="flex flex-col text-lg">
         <li className="flex items-center gap-4  mt-5">
-          <ArrowRight /> <p>Entspannungstrainerin (Studium)</p>
+          <ArrowRight className="h-6 w-6" />{' '}
+          <p>Entspannungstrainerin (Studium)</p>
         </li>
         <li className="flex gap-4 mt-2 items-center">
-          <ArrowRight /> <p>Klangtherapeutin (Weiterbildung) </p>
+          <ArrowRight className="h-6 w-6" />{' '}
+          <p>Klangtherapeutin (Weiterbildung) </p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight /> <p>Yoga teacher (200h Yoga Alliance)</p>
+          <ArrowRight className="h-6 w-6" />{' '}
+          <p>Yoga teacher (200h Yoga Alliance)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight /> <p>Greator Coaching (Seminar)</p>
+          <ArrowRight className="h-6 w-6" /> <p>Greator Coaching (Seminar)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight /> <p>Astrologische Psychologie (Studium)</p>
+          <ArrowRight className="h-6 w-6" />{' '}
+          <p>Astrologische Psychologie (Studium)</p>
         </li>
       </ul>
       <p className="md:mb-10 text-xl tracking-wider leading-relaxed md:mt-5">
