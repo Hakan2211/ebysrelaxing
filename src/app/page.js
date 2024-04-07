@@ -30,7 +30,7 @@ export default function Home() {
         <Quote />
       </section>
       <section className="bg-secondary ">
-        <div className="flex flex-col justify-evenly md:flex-row gap-6 p-8 ">
+        <div className="flex flex-col justify-evenly xl:flex-row gap-6 p-8 ">
           <CardComponent
             title="Entspannung"
             description={[
@@ -56,7 +56,7 @@ export default function Home() {
             src="/pose3.jpg"
           />
           <CardComponent
-            title="Astrologie"
+            title="Astrologische Psychologie"
             description={[
               'Dient als Diagnoseinstrument',
               'Stärkt Selbstbewusstsein',

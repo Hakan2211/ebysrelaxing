@@ -60,7 +60,7 @@ export default function PriceSection() {
       <Card className="flex flex-col border-none  text-slate-800 bg-[var(--bg-background-color-5)]">
         <CardHeader>
           <div className="flex items-baseline justify-between">
-            <CardTitle className="text-3xl md:text-4xl font-medium  tracking-wide">
+            <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Wellbeing Angebot
             </CardTitle>
             <div className="text-3xl md:text-4xl tracking-wide">175€</div>
@@ -102,11 +102,11 @@ export default function PriceSection() {
 
       <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
         <CardHeader>
-          <div className="flex md:flex-col lg:flex-row items-baseline justify-between">
+          <div className="flex  items-baseline justify-between">
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
-              Astrologie
+              Astrologische Psychologie
             </CardTitle>
-            <div className="text-3xl md:text-4xl">215€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">215€</div>
           </div>
           <CardDescription className="text-slate-800 text-xl tracking-wide">
             Onlineberatung
