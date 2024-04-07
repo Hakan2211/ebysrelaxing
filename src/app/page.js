@@ -72,7 +72,7 @@ export default function Home() {
       <section className="bg-slate-50 text-gray-500 ">
         <InvestmentSection />
       </section>
-      <section className=" mb-20 px-4 py-4 lg:p-16 lg:mb-0">
+      <section className="mb-32 px-4 py-4 lg:p-16 lg:mb-0">
         <PriceSection />
       </section>
       {/* <Footer /> */}
