@@ -1,8 +1,21 @@
 import React from 'react';
-
+import Document from '../components/icons/document';
 function Datenschutz() {
   return (
     <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 text-slate-800 p-4">
+      <h2 className="text-2xl tracking-wide leading-relaxed underline underline-offset-4">
+        Datenschutzerklärung
+      </h2>
+      <div className="flex flex-col md:flex-row gap-2 md:items-center text-xl mb-5 mt-3">
+        <a
+          href="/datenschutzerklaerung.pdf"
+          download="Datenschutzerklärung.pdf"
+        >
+          Datenschutzerklärung als PDF herunterladen
+        </a>
+        <Document className="w-6 h-6 shrink-0" />
+      </div>
+
       <h2 className="text-2xl tracking-wide leading-relaxed underline underline-offset-4">
         Allgemeine Geschäftsbedingungen
       </h2>

@@ -111,8 +111,8 @@ function About() {
       <p className="md:mb-10 text-xl tracking-wider leading-relaxed md:mt-5">
         In diesem Video fasse ich meinen Weg in aller Kürze zusammen
       </p>
-      <div className="rounded-lg flex justify-center mt-5 mb-10">
-        <video className="rounded-lg" width={500} height={500} controls>
+      <div className="rounded-lg flex  mt-5 mb-10">
+        <video className="rounded-lg w-[70%]" width={500} height={500} controls>
           <source src="/ebru_video.mp4" type="video/mp4" />
         </video>
       </div>

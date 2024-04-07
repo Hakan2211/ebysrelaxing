@@ -13,11 +13,13 @@ function Footer() {
           <h1 className="text-2xl text-slate-800">ebysrelaxing</h1>
         </div>
         <div className="flex flex-col gap-5">
-          <div className="text-xl text-slate-800">
+          <div className="text-xl text-slate-800 self-end">
             &#169; Copyright {date} Hakan Bilgic
           </div>
-          <div className="text-xl text-slate-800 hover:text-[var(--bg-background-color-7)] duration-300 transition-colors  self-end">
-            <Link href={'/datenschutz'}>Datenschutzerklärung</Link>
+          <div className="text-xl text-slate-800 hover:text-[var(--bg-background-color-7)] duration-300 transition-colors">
+            <Link href={'/datenschutz'}>
+              Allgemeine Geschäftsbedingungen & Datenschutz
+            </Link>
           </div>
         </div>
       </div>

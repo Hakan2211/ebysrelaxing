@@ -11,35 +11,13 @@ import InvestmentSection from './components/landing-section/investment-section';
 import Image from 'next/image';
 import styles from './landing.module.css';
 import PersonalSection2 from './components/landing-section/personal-section2';
+import LandingPage from './components/landing-section/landing-page';
 
 export default function Home() {
   return (
     <main className="col-start-1 col-end-6">
-      <section className="grid grid-cols-1 xl:grid-cols-2">
-        <div
-          className={`${styles.customHeight} p-4 md:p-16 xl:col-start-1 xl:col-end-4 h-[90svh] md:h-[100%] md:mt-16 text-slate-800`}
-        >
-          <HeroText />
-        </div>
-        <div className="xl:col-start-4 xl:col-end-6 w-full xl:place-items-center flex justify-center px-8   md:mt-0 md:translate-y-0">
-          {/* <Canvas
-            style={{ height: '100svh' }}
-            className=" pointer-events-auto "
-          >
-            <Common />
-            <LandingSection />
-          </Canvas> */}
-          <div className="flex justify-center w-full md:p-10 ">
-            <Image
-              src="/background_ebru.jpg"
-              width={600}
-              height={400}
-              alt="background"
-              className=" w-[90%] rounded-full h-[80%] md:h-[80%] md:w-[90%]"
-              // aspectRatio={4 / 5}
-            />
-          </div>
-        </div>
+      <section className="">
+        <LandingPage />
       </section>
       <section className=" bg-slate-50 text-black text-center p-8">
         <YogaVisuals />

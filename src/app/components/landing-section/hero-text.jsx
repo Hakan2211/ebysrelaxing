@@ -4,20 +4,14 @@ import Link from 'next/link';
 
 function HeroText() {
   return (
-    <div className="lg:h-[60svh]">
-      <h1
-        className={`${aboreto.className} md:text-4xl text-xl md:p-2 leading-relaxed tracking-wider mb-2 text-center hidden md:block `}
-      >
-        Ebysrelaxing
-      </h1>
-
+    <div>
       <p
-        className={`${aboreto.className} md:text-3xl text-2xl md:pb-8 leading-relaxed tracking-wider text-center`}
+        className={`${aboreto.className} md:text-3xl  text-slate-700 text-2xl md:pb-8 leading-relaxed tracking-wider text-center`}
       >
         Glückshormone, Gelassenheit und Lebenslust
       </p>
       <div
-        className={`${maitree.className} md:text-2xl text-lg tracking-wider text-slate-700  mt-2 leading-relaxed h-80`}
+        className={`${maitree.className} md:text-2xl text-lg tracking-wider text-slate-700  mt-2 leading-relaxed`}
       >
         <p>
           langfristig regulieren und durch das Leben entspannter gehen, komme

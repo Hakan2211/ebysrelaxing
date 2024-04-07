@@ -14,10 +14,10 @@ function Kontakt() {
       <Toaster position="top-right" />
       <div className="flex flex-col gap-2 mt-10 text-lg w-fit">
         <p>Hier kannst du mir eine Nachricht hinterlassen!</p>
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row ">
           <p>Kontaktiere mich auf meiner E-Mail-Adresse:</p>
           <a
-            className="underline underline-offset-4 ml-3 hover:text-[var(--bg-background-color-6)] "
+            className="underline underline-offset-4 lg:ml-3 hover:text-[var(--bg-background-color-6)] "
             href="mailto:ebysrelaxing@gmail.com"
           >
             ebysrelaxing@gmail.com
