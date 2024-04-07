@@ -105,6 +105,10 @@ function About() {
           <p>Yoga teacher (200h Yoga Alliance)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
+          <ArrowRight className="h-6 w-6 shrink-0 " />{' '}
+          <p>Akupressurklopftechniken / EFT (Basis- und Aufbauseminar)</p>
+        </li>
+        <li className="flex gap-4 mt-2  items-center">
           <ArrowRight className="h-6 w-6" /> <p>Greator Coaching (Seminar)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
@@ -112,7 +116,7 @@ function About() {
           <p>Astrologische Psychologie (Studium)</p>
         </li>
       </ul>
-      <p className="md:mb-10 text-xl tracking-wider leading-relaxed md:mt-5">
+      <p className=" md:mb-10 text-xl tracking-wider leading-relaxed mt-10">
         In diesem Video fasse ich meinen Weg in aller Kürze zusammen
       </p>
       <div className="rounded-lg flex  mt-5 mb-10">
