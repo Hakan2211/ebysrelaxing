@@ -1,15 +1,10 @@
 'use client';
 
-import HeroText from './components/landing-section/hero-text';
 import YogaVisuals from './components/landing-section/yoga-visuals';
-import PersonalSection from './components/landing-section/personal-section';
 import Quote from './components/landing-section/quote';
 import CardComponent from './components/landing-section/card-section';
 import PriceSection from './components/landing-section/PriceSection';
 import InvestmentSection from './components/landing-section/investment-section';
-
-import Image from 'next/image';
-import styles from './landing.module.css';
 import PersonalSection2 from './components/landing-section/personal-section2';
 import LandingPage from './components/landing-section/landing-page';
 
@@ -75,7 +70,6 @@ export default function Home() {
       <section className="mb-32 px-4 py-4 lg:p-16 lg:mb-0">
         <PriceSection />
       </section>
-      {/* <Footer /> */}
     </main>
   );
 }

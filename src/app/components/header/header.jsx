@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Logo from './logo';
 import NavLinks from './nav-links';
 import Logo2 from './logo2';
 

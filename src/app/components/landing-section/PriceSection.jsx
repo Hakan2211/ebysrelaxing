@@ -19,7 +19,7 @@ export default function PriceSection() {
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Gruppen-Special
             </CardTitle>
-            {/* <div className="text-4xl font-bold">499$</div> */}
+
             <div className="text-3xl md:text-4xl tracking-wide">35€</div>
           </div>
           <CardDescription className=" text-slate-800 text-xl tracking-wide">

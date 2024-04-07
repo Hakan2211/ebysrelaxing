@@ -18,7 +18,7 @@ function Quote() {
           Ich bin für Dich da, um Selbstwert und Selbstfürsorge zu stärken.
         </p>
         <p className="md:text-5xl text-2xl text-gray-500">
-          Erlebe die potenziellen Vorteile:
+          Erlebe diese potenziellen Vorteile:
         </p>
 
         {/* <cite className="text-xl md:text-2xl  text-gray-400">
