@@ -4,6 +4,11 @@ import ArrowRight from './arrow-right';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
+export const metadata = {
+  title: 'Ebru Bilgic - Ebysrelaxing - About',
+  description: 'About Ebru Bilgic - Ebysrelaxing.',
+};
+
 function About() {
   return (
     <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 text-slate-800 p-4">

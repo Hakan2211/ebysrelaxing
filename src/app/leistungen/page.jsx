@@ -6,6 +6,11 @@ import ArrowRight from '../components/icons/arrow-right';
 
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Ebru Bilgic - Ebysrelaxing - Leistungen',
+  description: 'Leistungen von Ebru Bilgic - Ebysrelaxing.',
+};
+
 function Leistungen() {
   return (
     <div className="md:col-start-2 md:col-end-5 col-start-1 col-end-6 text-slate-800 p-4">

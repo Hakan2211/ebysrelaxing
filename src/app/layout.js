@@ -4,7 +4,7 @@ import { didact } from './fonts/fonts';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
 export const metadata = {
-  title: 'Ebysrelaxing',
+  title: 'Ebru Bilgic - Ebysrelaxing',
   description: 'Die Homepage von Ebru Bilgic.',
 };
 
