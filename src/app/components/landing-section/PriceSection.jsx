@@ -108,7 +108,7 @@ export default function PriceSection() {
             </CardTitle>
             <div className="text-3xl md:text-4xl tracking-wide">
               <div>219€</div>
-              <div className="line-through">349€</div>
+              {/* <div className="line-through">349€</div> */}
             </div>
           </div>
           <CardDescription className="text-slate-800 text-xl tracking-wide">
