@@ -20,7 +20,7 @@ export default function PriceSection() {
               Gruppen-Special
             </CardTitle>
 
-            <div className="text-3xl md:text-4xl tracking-wide">35€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">29€</div>
           </div>
           <CardDescription className=" text-slate-800 text-xl tracking-wide">
             Onlineworkshop
@@ -63,7 +63,7 @@ export default function PriceSection() {
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Wellbeing Angebot
             </CardTitle>
-            <div className="text-3xl md:text-4xl tracking-wide">175€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">149€</div>
           </div>
 
           <CardDescription className=" text-slate-800 text-xl tracking-wide">
@@ -106,7 +106,10 @@ export default function PriceSection() {
             <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
               Astrologische Psychologie
             </CardTitle>
-            <div className="text-3xl md:text-4xl tracking-wide">215€</div>
+            <div className="text-3xl md:text-4xl tracking-wide">
+              <div>219€</div>
+              <div className="line-through">349€</div>
+            </div>
           </div>
           <CardDescription className="text-slate-800 text-xl tracking-wide">
             Onlineberatung
@@ -129,12 +132,8 @@ export default function PriceSection() {
 
             <li className="flex items-center">
               <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
-              <span className="hidden md:block">
-                Psychol. Ansätze nach C. G. Jung
-              </span>
-              <span className="block md:hidden">
-                Psychol. Ansätze nach C. G. Jung
-              </span>
+              <span className="hidden md:block">Alterspunkt-Analyse</span>
+              <span className="block md:hidden">Alterspunkt-Analyse</span>
             </li>
           </ul>
         </CardContent>
