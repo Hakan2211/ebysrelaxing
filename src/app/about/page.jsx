@@ -1,12 +1,14 @@
-import Image from 'next/image';
-import React from 'react';
-import ArrowRight from './arrow-right';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import React from "react";
+import ArrowRight from "./arrow-right";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: 'Ebru Bilgic - Ebysrelaxing - About',
-  description: 'About Ebru Bilgic - Ebysrelaxing.',
+  title: "Ebru Bilgic - Ebysrelaxing - About",
+  description: "About Ebru Bilgic - Ebysrelaxing.",
+  keywords:
+    "Ebysrelaxing, Ebru Bilgic, Spiritualität, Persönlichkeitsentwicklung, mentale Gesundheit, Coaching,",
 };
 
 function About() {
@@ -98,26 +100,26 @@ function About() {
       </h2>
       <ul className="flex flex-col text-lg">
         <li className="flex items-center gap-4  mt-5">
-          <ArrowRight className="h-6 w-6" />{' '}
+          <ArrowRight className="h-6 w-6" />{" "}
           <p>Entspannungstrainerin (Studium)</p>
         </li>
         <li className="flex gap-4 mt-2 items-center">
-          <ArrowRight className="h-6 w-6" />{' '}
+          <ArrowRight className="h-6 w-6" />{" "}
           <p>Klangtherapeutin (Weiterbildung) </p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight className="h-6 w-6" />{' '}
+          <ArrowRight className="h-6 w-6" />{" "}
           <p>Yoga teacher (200h Yoga Alliance)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight className="h-6 w-6 shrink-0 " />{' '}
+          <ArrowRight className="h-6 w-6 shrink-0 " />{" "}
           <p>Akupressurklopftechniken / EFT (Basis- und Aufbauseminar)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
           <ArrowRight className="h-6 w-6" /> <p>Greator Coaching (Seminar)</p>
         </li>
         <li className="flex gap-4 mt-2  items-center">
-          <ArrowRight className="h-6 w-6" />{' '}
+          <ArrowRight className="h-6 w-6" />{" "}
           <p>Astrologische Psychologie (Studium)</p>
         </li>
       </ul>

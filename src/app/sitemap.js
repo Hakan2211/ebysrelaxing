@@ -1,28 +1,28 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://www.ebysrelaxing.com/',
+      url: "https://www.ebysrelaxing.com/",
       lastModified: new Date(),
-      changeFrequency: 'never',
+      changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: 'https://www.ebysrelaxing.com/leistungen',
+      url: "https://www.ebysrelaxing.com/leistungen",
       lastModified: new Date(),
-      changeFrequency: 'never',
-      priority: 1,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
-      url: 'https://www.ebysrelaxing.com/about',
+      url: "https://www.ebysrelaxing.com/about",
       lastModified: new Date(),
-      changeFrequency: 'never',
-      priority: 1,
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
     {
-      url: 'https://www.ebysrelaxing.com/kontakt',
+      url: "https://www.ebysrelaxing.com/kontakt",
       lastModified: new Date(),
-      changeFrequency: 'never',
-      priority: 0.8,
+      changeFrequency: "never",
+      priority: 0.7,
     },
   ];
 }

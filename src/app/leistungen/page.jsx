@@ -1,14 +1,16 @@
-import { Button } from '@/components/ui/button';
-import React from 'react';
-import CalendlyEmbed from '../components/calendly/PopupWidget';
+import { Button } from "@/components/ui/button";
+import React from "react";
+import CalendlyEmbed from "../components/calendly/PopupWidget";
 
-import ArrowRight from '../components/icons/arrow-right';
+import ArrowRight from "../components/icons/arrow-right";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export const metadata = {
-  title: 'Ebru Bilgic - Ebysrelaxing - Leistungen',
-  description: 'Leistungen von Ebru Bilgic - Ebysrelaxing.',
+  title: "Ebru Bilgic - Ebysrelaxing - Leistungen",
+  description: "Leistungen von Ebru Bilgic - Ebysrelaxing.",
+  keywords:
+    "Ebysrelaxing, Entspannung, Meditation, Astrologie, Astrologische Psychologie, Yoga, Atemübungen,",
 };
 
 function Leistungen() {
@@ -92,7 +94,7 @@ function Leistungen() {
           <ArrowRight /> <span>Verbessertes Mitarbeiter-Wohlbefinden</span>
         </li>
         <li className="flex items-center gap-5 mt-2">
-          <ArrowRight />{' '}
+          <ArrowRight />{" "}
           <span>Erhöhte physische und psychische Belastbarkeit</span>
         </li>
         <li className="flex items-center gap-5 mt-2">
@@ -120,7 +122,7 @@ function Leistungen() {
         </span>
         <Link
           className="text-[var(--bg-background-color-6)] hover:text-[var(--bg-background-color-7)] duration-300 transition-colors underline underline-offset-4"
-          href={'/kontakt'}
+          href={"/kontakt"}
         >
           Kontaktmöglichkeit
         </Link>
