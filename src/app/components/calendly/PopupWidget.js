@@ -1,56 +1,58 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
-const CalendlyEmbed = ({ url, children }) => {
-  useEffect(() => {
-    // Dynamically load the Calendly script
+const SCRIPT_ID = 'calendly-widget-script';
+const STYLE_ID = 'calendly-widget-style';
+
+function ensureCalendlyAssets() {
+  if (typeof document === 'undefined') return;
+
+  if (!document.getElementById(STYLE_ID)) {
+    const link = document.createElement('link');
+    link.id = STYLE_ID;
+    link.rel = 'stylesheet';
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    document.head.appendChild(link);
+  }
+
+  if (!document.getElementById(SCRIPT_ID)) {
     const script = document.createElement('script');
+    script.id = SCRIPT_ID;
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     document.body.appendChild(script);
+  }
+}
 
-    // Dynamically load the Calendly CSS
-    const link = document.createElement('link');
-    link.href = 'https://assets.calendly.com/assets/external/widget.css';
-    // link.backgroundColor = '#e1d5bf';
-    // link.textColor = '#6a604d';
-    // link.primaryColor = '#fff7f2';
-    // link.type = 'text/css';
-    link.rel = 'stylesheet';
-
-    document.head.appendChild(link);
-
-    return () => {
-      // Cleanup the script and style
-      document.body.removeChild(script);
-      document.head.removeChild(link);
-    };
+const CalendlyEmbed = ({ url, children, className, size = 'xl' }) => {
+  // Load the Calendly assets once per page, shared by all buttons.
+  useEffect(() => {
+    ensureCalendlyAssets();
   }, []);
 
-  const handleCalendlyPopup = () => {
-    // Ensure Calendly is loaded
+  const handleClick = () => {
     if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: url,
-      });
+      window.Calendly.initPopupWidget({ url });
+    } else {
+      // Script not ready yet (slow network) – fall back to opening Calendly directly.
+      window.open(url, '_blank', 'noopener,noreferrer');
     }
   };
 
   return (
-    <div
-      className="text-black group-hover:text-white text-xl duration-300 transition-colors"
-      onClick={handleCalendlyPopup}
-      style={{ cursor: 'pointer' }}
+    <Button
+      type="button"
+      variant="brand"
+      size={size}
+      className={cn(className)}
+      onClick={handleClick}
     >
       {children || 'Termin buchen'}
-    </div>
+    </Button>
   );
 };
 
 export default CalendlyEmbed;
-
-// <!-- Calendly Inline-Widget Beginn -->
-// <div class="calendly-inline-widget" data-url="https://calendly.com/ebysrelaxing/business-yoga?background_color=e1d5bf&text_color=6a604d&primary_color=fff7f2" style="min-width:320px;height:700px;"></div>
-// <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-// <!-- Calendly Inline-Widget Ende -->

@@ -1,151 +1,92 @@
-import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardTitle,
-  CardDescription,
-  CardHeader,
-  CardContent,
-  CardFooter,
-} from '@/components/ui/card';
+import { cn } from '@/lib/utils';
+import { offers } from '@/app/data/offers';
 import CalendlyEmbed from '../calendly/PopupWidget';
+import Reveal from '../reveal';
+import SectionHeading from '../section-heading';
 import { CheckIcon } from './price-section';
 
 export default function PriceSection() {
   return (
-    <div className="grid gap-6 md:gap-8  grid-cols-1 font-medium  xl:grid-cols-3">
-      <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
-        <CardHeader>
-          <div className="flex items-baseline justify-between">
-            <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
-              Gruppen-Special
-            </CardTitle>
-
-            <div className="text-3xl md:text-4xl tracking-wide">29€</div>
-          </div>
-          <CardDescription className=" text-slate-800 text-xl tracking-wide">
-            Onlineworkshop
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="text-lg md:text-xl tracking-wide">
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              60 Minuten
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Yoga & PMR
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              EFT & Atem
-            </li>
-            <li className="flex items-center ">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              <span className="hidden md:block">Meditation & Klang</span>
-
-              <span className="block md:hidden">Meditation & Klang</span>
-            </li>
-          </ul>
-        </CardContent>
-        <CardFooter className="group w-fit">
-          <Button
-            className="bg-[var(--bg-background-color-6)] group-hover:text-white duration-300 transition-colors"
-            variant="outline"
-          >
-            <CalendlyEmbed url="https://calendly.com/ebysrelaxing/gruppenevent?background_color=fff7f2&text_color=6a604d&primary_color=6a604d" />
-          </Button>
-        </CardFooter>
-      </Card>
-      <Card className="flex flex-col border-none  text-slate-800 bg-[var(--bg-background-color-5)]">
-        <CardHeader>
-          <div className="flex items-baseline justify-between">
-            <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
-              Wellbeing Angebot
-            </CardTitle>
-            <div className="text-3xl md:text-4xl tracking-wide">149€</div>
-          </div>
-
-          <CardDescription className=" text-slate-800 text-xl tracking-wide">
-            Präsenzkurs
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="text-xl tracking-wide">
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <CheckIcon className="mr-2  inline-block h-4 w-4" />
-              <span className="">60 Minuten</span>
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              <span>Raum Frankfurt</span>
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
-              <span>In Ihren Firmenräumlichkeiten</span>
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
-              <span>Angepasst an Ihre Bedürfnisse </span>
-            </li>
-          </ul>
-        </CardContent>
-        <CardFooter className="group w-fit">
-          <Button
-            className="bg-[var(--bg-background-color-6)] group-hover:text-white duration-300 transition-colors"
-            variant="outline"
-          >
-            <CalendlyEmbed url="https://calendly.com/ebysrelaxing/business-yoga?background_color=fff7f2&text_color=6a604d&primary_color=6a604d" />
-          </Button>
-        </CardFooter>
-      </Card>
-
-      <Card className="flex flex-col text-slate-800 border-none bg-[var(--bg-background-color-5)]">
-        <CardHeader>
-          <div className="flex  items-baseline justify-between">
-            <CardTitle className="text-3xl md:text-4xl font-medium tracking-wide">
-              Astrologische Psychologie
-            </CardTitle>
-            <div className="text-3xl md:text-4xl tracking-wide">
-              <div>219€</div>
-              {/* <div className="line-through">349€</div> */}
-            </div>
-          </div>
-          <CardDescription className="text-slate-800 text-xl tracking-wide">
-            Onlineberatung
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="text-xl tracking-wide">
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              75 Minuten
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4" />
-              Geburtshoroskop
-            </li>
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
-              Fünf-Schichten-Modell Deutung
-            </li>
-
-            <li className="flex items-center">
-              <CheckIcon className="mr-2 inline-block h-4 w-4 shrink-0" />
-              <span className="hidden md:block">Alterspunkt-Analyse</span>
-              <span className="block md:hidden">Alterspunkt-Analyse</span>
-            </li>
-          </ul>
-        </CardContent>
-        <CardFooter className="group w-fit">
-          <Button
-            className="bg-[var(--bg-background-color-6)] group-hover:text-white duration-300 transition-colors"
-            variant="outline"
-          >
-            <CalendlyEmbed url="https://calendly.com/ebysrelaxing/astrologie?background_color=fff7f2&text_color=6a604d&primary_color=6a604d" />
-          </Button>
-        </CardFooter>
-      </Card>
+    <div className="container px-4 py-16 md:px-6 md:py-24">
+      <Reveal>
+        <SectionHeading
+          id="preise-heading"
+          eyebrow="Jetzt buchen"
+          title="Angebote & Preise"
+          ornament
+        />
+      </Reveal>
+      <div className="mx-auto mt-14 grid max-w-6xl grid-cols-1 items-stretch gap-8 lg:grid-cols-3">
+        {offers.map((offer, i) => {
+          const Icon = offer.icon;
+          const dark = offer.featured;
+          return (
+            <Reveal key={offer.title} delay={i * 120} className="h-full">
+              <article
+                className={cn(
+                  'flex h-full flex-col rounded-[2rem] p-8 transition-all duration-500 ease-out-expo hover:-translate-y-1.5 md:p-10',
+                  dark
+                    ? 'bg-[var(--bg-background-color-7)] text-[var(--bg-background-color-3)] shadow-[0_30px_60px_-25px_rgb(106_96_77_/_0.8)] lg:-translate-y-4 lg:hover:-translate-y-5'
+                    : 'bg-white/70 text-slate-800 shadow-[0_10px_40px_-20px_rgb(106_96_77_/_0.4)] ring-1 ring-[var(--bg-background-color-2)] hover:shadow-[0_24px_50px_-20px_rgb(106_96_77_/_0.5)]'
+                )}
+              >
+                <span
+                  className={cn(
+                    'inline-flex w-fit items-center gap-2 rounded-full px-3 py-1 text-sm',
+                    dark
+                      ? 'bg-white/10 text-[var(--bg-background-color-2)]'
+                      : 'bg-[var(--bg-background-color-2)] text-[var(--bg-background-color-7)]'
+                  )}
+                >
+                  <Icon className="h-4 w-4" aria-hidden="true" />
+                  {offer.format}
+                </span>
+                <h3 className="mt-6 font-display text-2xl md:text-3xl">
+                  {offer.title}
+                </h3>
+                <p className="mt-4 flex items-baseline gap-2">
+                  <span className="font-display text-5xl font-light md:text-6xl">
+                    {offer.price}
+                  </span>
+                </p>
+                <div
+                  className={cn(
+                    'my-8 h-px',
+                    dark ? 'bg-white/15' : 'bg-[var(--bg-background-color-2)]'
+                  )}
+                />
+                <ul className="space-y-3 text-lg">
+                  {offer.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3">
+                      <span
+                        className={cn(
+                          'mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full',
+                          dark
+                            ? 'bg-white/15 text-white'
+                            : 'bg-[var(--bg-background-color-2)] text-[var(--bg-background-color-7)]'
+                        )}
+                      >
+                        <CheckIcon aria-hidden="true" className="h-3 w-3" />
+                      </span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-10">
+                  <CalendlyEmbed
+                    url={offer.url}
+                    className={cn(
+                      'w-full',
+                      dark &&
+                        'bg-[var(--bg-background-color-2)] text-slate-900 hover:bg-white hover:text-slate-900'
+                    )}
+                  />
+                </div>
+              </article>
+            </Reveal>
+          );
+        })}
+      </div>
     </div>
   );
 }

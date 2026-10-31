@@ -1,33 +1,39 @@
-import { CardContent, Card } from '@/components/ui/card';
+import Image from 'next/image';
+import { Leaf } from 'lucide-react';
 
-export default function CardComponent({ title, description, src }) {
+export default function CardComponent({ title, description, src, alt, icon: Icon }) {
   return (
-    <div className="">
-      <Card className="border-none">
-        <CardContent className="flex flex-col items-center bg-[var(--bg-background-color-4)] rounded-lg gap-4 p-4">
-          <img
-            alt="Category 1"
-            className="w-full h-60 md:h-96 object-cover rounded-lg"
-            height="200"
+    <article className="group flex h-full flex-col items-center rounded-[2rem] bg-white/70 p-6 text-center shadow-[0_10px_40px_-20px_rgb(106_96_77_/_0.4)] ring-1 ring-[var(--bg-background-color-2)] transition-all duration-500 ease-out-expo hover:-translate-y-1.5 hover:shadow-[0_24px_50px_-20px_rgb(106_96_77_/_0.5)] md:p-8">
+      <div className="relative w-full max-w-[13rem]">
+        <div className="relative aspect-square overflow-hidden rounded-t-full">
+          <Image
+            alt={alt}
             src={src}
-            style={{
-              aspectRatio: '200/200',
-              objectFit: 'cover',
-            }}
-            width="200"
+            fill
+            sizes="13rem"
+            className="object-cover transition-transform duration-700 ease-out-expo group-hover:scale-105"
           />
-          <h3 className="text-xl md:text-3xl tracking-wide text-slate-800 font-medium">
-            {title}
-          </h3>
-          <div className="text-center md:text-lg tracking-wide text-slate-700 ">
-            <ul>
-              {description.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
+        </div>
+        {Icon && (
+          <span className="absolute -bottom-5 left-1/2 flex h-11 w-11 -translate-x-1/2 items-center justify-center rounded-full bg-[var(--bg-background-color-6)] text-white shadow-md ring-4 ring-white">
+            <Icon className="h-5 w-5" aria-hidden="true" />
+          </span>
+        )}
+      </div>
+      <h3 className="mt-10 font-display text-2xl text-slate-900 md:text-3xl">
+        {title}
+      </h3>
+      <ul className="mt-5 space-y-2.5 text-left text-slate-700 md:text-lg">
+        {description.map((item) => (
+          <li key={item} className="flex items-start gap-3">
+            <Leaf
+              className="mt-1 h-4 w-4 shrink-0 text-[var(--bg-background-color-6)]"
+              aria-hidden="true"
+            />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </article>
   );
 }
