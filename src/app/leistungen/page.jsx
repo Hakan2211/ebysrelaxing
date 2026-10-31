@@ -24,6 +24,8 @@ import Wave from '../components/wave';
 export const metadata = {
   title: 'Ebru Bilgic - Ebysrelaxing - Leistungen',
   description: 'Leistungen von Ebru Bilgic - Ebysrelaxing.',
+  keywords:
+    'Ebysrelaxing, Entspannung, Meditation, Astrologie, Astrologische Psychologie, Yoga, Atemübungen,',
 };
 
 const IVORY = 'var(--bg-background-color-4)';

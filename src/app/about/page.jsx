@@ -26,6 +26,8 @@ import Wave from '../components/wave';
 export const metadata = {
   title: 'Ebru Bilgic - Ebysrelaxing - About',
   description: 'About Ebru Bilgic - Ebysrelaxing.',
+  keywords:
+    'Ebysrelaxing, Ebru Bilgic, Spiritualität, Persönlichkeitsentwicklung, mentale Gesundheit, Coaching,',
 };
 
 const IVORY = 'var(--bg-background-color-4)';
